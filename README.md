@@ -7,7 +7,6 @@
 <!-- * [(제휴사) 월간 보고서 API](docs/report-api.md) -->
 <!-- * [직행 유저 유입 추적 SPEC](docs/spec.md) -->
 
-
 <br>
 
 ## 제휴 문의 하기
