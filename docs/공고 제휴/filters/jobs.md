@@ -1,7 +1,5 @@
 # zighang-jobs
 
-<!-- test -->
-
 ```json
 {
     "recJobMajorCategory": "반도체",
