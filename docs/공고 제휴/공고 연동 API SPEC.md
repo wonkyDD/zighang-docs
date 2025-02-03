@@ -1,25 +1,21 @@
-# 공고 API Spec
+# 공고 연동 API SPEC
 
 <!-- 제휴사의 공고를 가져와 직행이 연동을 하기 위해,   -->
 <!-- api 엔드포인트를 만들어줘야합니다. -->
-
 
 <!-- api 엔드포인트 예시입니다. -->
 
 <!-- > <mark style="color:green;">**`GET`**</mark> `<AFFILIATE_COMPANY_API_URL>/api/affiliate/zighang/recruitment`&#x20; -->
 
-
-제휴사에서 연동 api 작업이 완료되면  
-직행팀  (`paca@zighang.com` ) 및 개발부서와 소통한 뒤,  
-연동이 완료됩니다.
+<!-- 제휴사에서 연동 api 작업이 완료되면   -->
+<!-- 직행팀  (`paca@zighang.com` ) 및 개발부서와 소통한 뒤,   -->
+<!-- 연동이 완료됩니다. -->
 
 <br>
 
-## 공고 연동 API SPEC
-
 <!-- 해당 api는 다음 Request, Response 스펙을 만족하도록 만들어져야 합니다. -->
 
-<!-- ### Request Format
+<!-- ## Request Format
 
 <mark style="color:red;">**`*`**</mark>  표시는 필수입니다.
 
@@ -45,7 +41,8 @@
 
  -->
 
-### Response Format
+
+## Response Format
 
 <table><thead><tr><th width="210">Field Name</th><th>Type</th><th>Description</th><th>Allowed Values</th></tr></thead><tbody><tr><td>recruitmentUid</td><td>String</td><td>Recruitment UID</td><td>String</td></tr><tr><td>title</td><td>String</td><td>Title</td><td>String</td></tr><tr><td>mainImageUrl</td><td>String</td><td>Main image URL</td><td>String</td></tr><tr><td>companyName</td><td>String</td><td>Company name</td><td>String</td></tr><tr><td>companyTypes</td><td>String</td><td>Company type</td><td>"STARTUP","MAJOR","UNICORN","MIDDLE_MARKET","PUBLIC","ETC","FOREIGN","PUBLIC_INSTITUTION","SMALL_MARKET"</td></tr><tr><td>industryTypes</td><td>List&#x3C;String></td><td>Industry classifications</td><td>"MEDICAL_PHARMACEUTICAL_WELFARE","MANUFACTURING_CHEMICAL","SALES_DISTRIBUTION","IT_WEB_COMMUNICATION","CONSTRUCTION","EDUCATION","MEDIA_DESIGN","BANKING_FINANCIAL","INSTITUTIONS_ASSOCIATIONS","SERVICE","ETC","AGRICULTURE","MINING"</td></tr><tr><td>companyAddress</td><td>String</td><td>Company address</td><td>String</td></tr><tr><td>recruitmentJobs</td><td>Map&#x3C;String, List&#x3C;String>></td><td>Job categories</td><td>Refer to external document</td></tr><tr><td><p>recruitmentAnnou</p><p>ncementLink</p></td><td>String</td><td>Announcement link</td><td>String</td></tr><tr><td>recruitmentTypes</td><td>List&#x3C;String></td><td>Recruitment types</td><td>"CONVERTIBLE_INTERN","FULL_TIME","CONTRACT","INDUSTRIAL_TECHNICAL","PROFESSIONAL_RESEARCH","OPEN_RECRUITMENT","OCCASIONAL_RECRUITMENT","DAY_WORKER","EXPERIENTIAL_INTERN"</td></tr><tr><td>educations</td><td>List&#x3C;String></td><td>Education requirements</td><td>"IRRELEVANCE","HIGH_SCHOOL","BACHELOR","MASTER","DOCTOR","JUNIOR_COLLEGE"</td></tr><tr><td>yearsMin</td><td>Integer</td><td>Year of experience requirements minimum</td><td>0 ~ 99 (IRRELEVANCE: -1)</td></tr><tr><td>yearsMax</td><td>Integer</td><td><p>Year of</p><p>experience</p><p>requirements</p><p>maximum</p></td><td>0 ~ 99 (IRRELEVANCE: -1)</td></tr><tr><td>regions</td><td>List&#x3C;String></td><td>Work locations</td><td>"SEOUL","GYEONGGI","INCHEON","BUSAN","DAEGU","GWANGJU","DAEJEON","ULSAN","SEJONG","GANGWON","GYEONGNAM","GYEONGBUK","JEONNAM","JEONBUK","CHUNGNAM","CHUNGBUK","JEJU","ETC"</td></tr><tr><td><p>recruitmentStartD</p><p>ate</p></td><td>Integer</td><td>Recruitment start date</td><td>1727050583611 (milliseconds since epoch)</td></tr><tr><td>workStartDate</td><td>Integer</td><td>Work start date</td><td>1727050583611 (milliseconds since epoch)</td></tr><tr><td>workEndDate</td><td>Integer</td><td>Work end date</td><td>1727050583611 (milliseconds since epoch)</td></tr><tr><td>createdDate</td><td>Integer</td><td>Upload date</td><td>1727050583611 (milliseconds since epoch)</td></tr><tr><td>lastModifiedDate</td><td>Integer</td><td>Last modified date</td><td>1727050583611 (milliseconds since epoch)</td></tr><tr><td><p>recruitmentDeadli</p><p>neDate</p></td><td>Integer</td><td>Recruitment deadline</td><td>1727050583611 (milliseconds since epoch)</td></tr><tr><td>deadlineType</td><td>String</td><td>Deadline type</td><td>"ALL_TIME","CLOSE_WHEN_RECRUITMENT","DUE_DATE","EXPIRED"</td></tr></tbody></table>
 
