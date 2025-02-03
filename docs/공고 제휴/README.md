@@ -1,6 +1,7 @@
 # 공고 제휴
 
-* [1. 공고 API Spec](공고%20연동%20API%20SPEC.md)
+* 목차
+    * [1. 공고 API Spec](공고%20연동%20API%20SPEC.md)
 * 기타
     * [직군/직무](filters/jobs.md)
     <!-- * [기업유형](filters/) -->
