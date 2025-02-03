@@ -44,8 +44,8 @@
 
 ## Response Format
 
-| Field Name | Type | Description | Allowed Values |
-|------------|------|-------------|----------------|
+| Field Name  | Type  | Description  |  Allowed Values |
+|:------------|:------|:-------------|:----------------|
 | recruitmentUid | String | Recruitment UID | String |
 | title | String | Title | String |
 | mainImageUrl | String | Main image URL | String |
